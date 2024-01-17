@@ -128,18 +128,18 @@
               <td class="text-end">
                 <div class="btn-group">
                   <a [routerLink]="['/intervention', intervention.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
-                    <fa-icon icon="eye"></fa-icon>
-                    <span class="d-none d-md-inline" jhiTranslate="entity.action.view">Voir</span>
+                    <fa-icon icon="eye" class="text-success"></fa-icon>
+                    <span class="d-none d-md-inline text-success" jhiTranslate="entity.action.view">Voir</span>
                   </a>
 
                   <a [routerLink]="['/intervention', intervention.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
-                    <fa-icon icon="pencil-alt"></fa-icon>
-                    <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Editer</span>
+                    <fa-icon icon="pencil-alt" class="text-warning"></fa-icon>
+                    <span class="d-none d-md-inline text-warning" jhiTranslate="entity.action.edit">Editer</span>
                   </a>
 
                   <button type="submit" (click)="delete(intervention)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
-                    <fa-icon icon="times"></fa-icon>
-                    <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Supprimer</span>
+                    <fa-icon icon="times" class="text-danger"></fa-icon>
+                    <span class="d-none d-md-inline text-danger" jhiTranslate="entity.action.delete">Supprimer</span>
                   </button>
                 </div>
               </td>
