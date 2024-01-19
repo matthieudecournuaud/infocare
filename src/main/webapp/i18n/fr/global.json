@@ -5,19 +5,17 @@
     "menu": {
       "home": "Accueil",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
-      "entities": {
-        "main": "Entités",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
-        "ticket": "Ticket",
-        "applicationUser": "Application User",
-        "category": "Category",
-        "status": "Status",
-        "priority": "Priority",
-        "material": "Material",
-        "company": "Company",
-        "comment": "Comment",
-        "intervention": "Intervention",
-        "procedure": "Procedure"
+      "tickets": {
+        "main": "Tickets",
+        "liste": "liste",
+        "priorite": "Priorités",
+        "status": "Status"
+      },
+      "messagerie": {
+        "main": "Messagerie"
+      },
+      "procedures": {
+        "main": "Procédures"
       },
       "account": {
         "main": "Compte",
@@ -39,6 +37,12 @@
         "apidocs": "API",
         "database": "Base de données",
         "jhipster-needle-menu-add-admin-element": "JHipster will add additional menu entries here (do not translate!)"
+      },
+      "client": {
+        "tickets": "Mes Tickets",
+        "materiels": "Matériels",
+        "notifications": "Notifications",
+        "profil": "Mon profil"
       },
       "language": "Langue"
     },
