@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { Authority } from 'app/config/authority.constants';
 import { errorRoute } from './layouts/error/error.route';
 
-import HomeComponent from './accueil/home/home.component';
+import { HomeComponent } from './accueil/home/home.component';
 import NavbarComponent from './layouts/navbar/navbar.component';
 import LoginComponent from './login/login.component';
 import { olsenGuard } from './olsen.guard';
@@ -40,7 +40,6 @@ const routes: Routes = [
     data: {
       authorities: [Authority.CLIENT],
     },
-    canActivate: [olsenGuard],
     loadChildren: () => import('./users/client/client.routes'),
   },
   {

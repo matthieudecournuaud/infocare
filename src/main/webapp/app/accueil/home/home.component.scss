@@ -2,20 +2,50 @@
 Main page styles
 ========================================================================== */
 
-.hipster {
-  display: inline-block;
-  width: 347px;
-  height: 497px;
-  background-size: contain;
-}
+.neumorphic-dashboard {
+  padding: 20px;
+  background-color: #e0e5ec;
+  /* Arrière-plan typique du neumorphisme, à ajuster selon votre thème Morph */
 
-/* wait autoprefixer update to allow simple generation of high pixel density media query */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (-moz-min-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-  .hipster {
-    background-size: contain;
+  .neumorphic-block {
+    background: #ffffff;
+    /* Couleur d'arrière-plan du bloc */
+    border-radius: 15px;
+    /* Rayon de bordure pour l'effet arrondi */
+    box-shadow:
+      8px 8px 15px rgba(163, 177, 198, 0.6),
+      /* Ombre extérieure foncée */ -8px -8px 15px rgba(255, 255, 255, 0.5);
+    /* Ombre extérieure claire */
+    padding: 20px;
+    /* Espace intérieur du bloc */
+    margin: 20px 0;
+    /* Espace extérieur du bloc */
+
+    .neumorphic-title {
+      font-size: 1.5em;
+      /* Taille du texte du titre */
+      color: #333;
+      /* Couleur du texte du titre */
+      margin-bottom: 10px;
+      /* Espace après le titre */
+      font-weight: bold;
+      /* Gras pour le titre */
+    }
+
+    .neumorphic-content {
+      /* Styles pour le contenu du dashboard */
+      color: #333;
+
+      /* Couleur du texte du contenu */
+      p {
+        margin-bottom: 10px;
+        /* Espace après chaque paragraphe */
+      }
+    }
+
+    .progress {
+      height: 10px;
+      /* Hauteur souhaitée de la barre de progression */
+    }
   }
 }

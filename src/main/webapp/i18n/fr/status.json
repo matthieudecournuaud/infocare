@@ -2,7 +2,7 @@
   "infocareApp": {
     "status": {
       "home": {
-        "title": "Statuses",
+        "title": "Status",
         "refreshListLabel": "Actualiser la liste",
         "createLabel": "Créer un nouveau Status",
         "createOrEditLabel": "Créer ou éditer un Status",

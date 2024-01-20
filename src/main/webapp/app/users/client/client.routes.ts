@@ -10,8 +10,8 @@ const routes: Routes = [
     loadComponent: () => import('./mes-tickets/mes-tickets.component'),
   },
   {
-    path: 'profil',
-    loadComponent: () => import('./profil/profil.component'),
+    path: 'notifications',
+    loadComponent: () => import('./notifications/notifications.component'),
   },
 ];
 

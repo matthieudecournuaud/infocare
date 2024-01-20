@@ -64,7 +64,7 @@
               <li>
                 <a
                   class="dropdown-item"
-                  routerLink="/ticket"
+                  routerLink="/priority"
                   routerLinkActive="active"
                   [routerLinkActiveOptions]="{ exact: true }"
                   (click)="collapseNavbar()"
@@ -76,7 +76,7 @@
               <li>
                 <a
                   class="dropdown-item"
-                  routerLink="/application-user"
+                  routerLink="/status"
                   routerLinkActive="active"
                   [routerLinkActiveOptions]="{ exact: true }"
                   (click)="collapseNavbar()"
@@ -91,7 +91,7 @@
         }
         @if (account !== null) {
           <li *jhiHasAnyAuthority="'ROLE_ADMIN'" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link" id="client-menu">
+            <a class="nav-link" id="client-menu" routerLink="/material">
               <span>
                 <fa-icon icon="microchip" [fixedWidth]="true"></fa-icon>
                 <span jhiTranslate="global.menu.client.materiels">Matériels</span>
@@ -107,7 +107,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <a class="nav-link">
+            <a class="nav-link" routerLink="/comment">
               <span>
                 <fa-icon icon="message"></fa-icon>
                 <span jhiTranslate="global.menu.messagerie.main">Messagerie</span>
@@ -123,7 +123,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <a class="nav-link">
+            <a class="nav-link" routerLink="/procedure">
               <span>
                 <fa-icon icon="message"></fa-icon>
                 <span jhiTranslate="global.menu.procedures.main">Procédures</span>
@@ -223,7 +223,7 @@
               <li>
                 <a
                   class="dropdown-item"
-                  routerLink="/ticket"
+                  routerLink="/priority"
                   routerLinkActive="active"
                   [routerLinkActiveOptions]="{ exact: true }"
                   (click)="collapseNavbar()"
@@ -235,7 +235,7 @@
               <li>
                 <a
                   class="dropdown-item"
-                  routerLink="/application-user"
+                  routerLink="/status"
                   routerLinkActive="active"
                   [routerLinkActiveOptions]="{ exact: true }"
                   (click)="collapseNavbar()"
@@ -255,7 +255,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <a class="nav-link">
+            <a class="nav-link" routerLink="/comment">
               <span>
                 <fa-icon icon="message"></fa-icon>
                 <span jhiTranslate="global.menu.messagerie.main">Messagerie</span>
@@ -271,7 +271,7 @@
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
           >
-            <a class="nav-link">
+            <a class="nav-link" routerLink="/procedure">
               <span>
                 <fa-icon icon="message"></fa-icon>
                 <span jhiTranslate="global.menu.procedures.main">Procédures</span>
@@ -303,9 +303,9 @@
             class="nav-item dropdown pointer"
             display="dynamic"
             routerLinkActive="active"
-            [routerLinkActiveOptions]="{ exact: true }"
+            [routerLinkActiveOptions]="{ exact: false }"
           >
-            <a class="nav-link" href="javascript:void(0);" routerLink="/users/client/mes-tickets">
+            <a class="nav-link" href="javascript:void(0);" routerLink="/client/mes-tickets">
               <span>
                 <fa-icon icon="file-lines" [fixedWidth]="true"></fa-icon>
                 <span jhiTranslate="global.menu.client.tickets">Mes tickets</span>
@@ -313,7 +313,7 @@
             </a>
           </li>
           <li *jhiHasAnyAuthority="'ROLE_CLIENT'" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link" id="client-menu">
+            <a class="nav-link" id="client-menu" routerLink="/client/materiels">
               <span>
                 <fa-icon icon="microchip" [fixedWidth]="true"></fa-icon>
                 <span jhiTranslate="global.menu.client.materiels">Matériels</span>
@@ -321,7 +321,7 @@
             </a>
           </li>
           <li *jhiHasAnyAuthority="'ROLE_CLIENT'" display="dynamic" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-            <a class="nav-link" id="client-menu">
+            <a class="nav-link" id="client-menu" routerLink="/client/notifications">
               <span>
                 <fa-icon icon="exclamation-circle" [fixedWidth]="true"></fa-icon>
                 <span jhiTranslate="global.menu.client.notifications">Notifications</span>

@@ -2,7 +2,7 @@
   "infocareApp": {
     "priority": {
       "home": {
-        "title": "Priorities",
+        "title": "Priorités",
         "refreshListLabel": "Actualiser la liste",
         "createLabel": "Créer un nouveau Priority",
         "createOrEditLabel": "Créer ou éditer un Priority",
