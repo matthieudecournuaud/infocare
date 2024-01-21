@@ -41,6 +41,13 @@ Main page styles
         margin-bottom: 10px;
         /* Espace après chaque paragraphe */
       }
+
+      .ticket-label {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+      }
     }
 
     .progress {
